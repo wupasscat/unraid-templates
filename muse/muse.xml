@@ -17,17 +17,19 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>If you like my work please consider Donating.</DonateText>
+  <DonateLink>https://www.buymeacoffee.com/wupasscat</DonateLink>
   <Requires/>
   <Config Name="Appdata" Target="/data" Default="/mnt/user/appdata/muse/data" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/muse/data</Config>
   <Config Name="Discord Bot Token" Target="DISCORD_TOKEN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="Spotify Client ID" Target="SPOTIFY_CLIENT_ID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Spotify Client Secret" Target="SPOTIFY_CLIENT_SECRET" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true"/>
+  <Config Name="Spotify Client ID" Target="SPOTIFY_CLIENT_ID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Spotify Client Secret" Target="SPOTIFY_CLIENT_SECRET" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"/>
   <Config Name="YouTube API Key" Target="YOUTUBE_API_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Bot Status" Target="BOT_STATUS" Default="online|idle|dnd" Mode="" Description="Set bot status. Can be online, idle, or dnd (do not disturb)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="SponsorBlock" Target="ENABLE_SPONSORBLOCK" Default="|true" Mode="" Description="Skip non-music segments at the beginning or end of a Youtube music video" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Bot Status" Target="BOT_STATUS" Default="online|idle|dnd" Mode="" Description="Set bot status. Can be online, idle, or dnd (do not disturb)" Type="Variable" Display="advanced" Required="false" Mask="false">online</Config>
   <Config Name="Bot Activity Type" Target="BOT_ACTIVITY_TYPE" Default="|PLAYING|LISTENING|WATCHING|STREAMING" Mode="" Description="Set bot activity type. Add your stream URL below if you use STREAMING" Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Bot Activity" Target="BOT_ACTIVITY" Default="" Mode="" Description="the text that follows the activity type" Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Bot Activity URL (REQUIRED FOR STREAMING)" Target="BOT_ACTIVITY_URL" Default="" Mode="" Description="If you set Bot Activity Type to STREAMING, you MUST use this variable. Accepts YouTube or Twitch stream URL" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Cache Size Limit" Target="CACHE_LIMIT" Default="2GB" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Cache Size Limit" Target="CACHE_LIMIT" Default="2GB" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">2GB</Config>
+  <Config Name="SponsorBlock Timeout" Target="SPONSORBLOCK_TIMEOUT" Default="5" Mode="" Description="Delay (in minutes) before retrying when SponsorBlock servers are unreachable." Type="Variable" Display="advanced" Required="false" Mask="false"/>
 </Container>
