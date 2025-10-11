@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>meshmonitor</Name>
+  <Repository>ghcr.io/yeraze/meshmonitor</Repository>
+  <Registry>https://ghcr.io/yeraze/meshmonitor</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/Yeraze/meshmonitor/issues</Support>
+  <Project>https://github.com/Yeraze/meshmonitor</Project>
+  <Overview> Web tool for monitoring a Meshtastic Node Deployment over TCP/HTTP </Overview>
+  <Category>Tools: Network:Management</Category>
+  <WebUI>http://[IP]:[PORT:3001]/</WebUI>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1760143498</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Meshtastic Node IP" Target="MESHTASTIC_NODE_IP" Default="" Mode="" Description="IP address of your Meshtastic node" Type="Variable" Display="always" Required="true" Mask="false">192.168.2.199</Config>
+  <Config Name="Web UI Port" Target="3001" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">3001</Config>
+  <Config Name="Meshtastic TCP Port" Target="4403" Default="4403" Mode="tcp" Description="TCP port for Meshtastic node connection" Type="Port" Display="always" Required="true" Mask="false">4403</Config>
+  <Config Name="Timezone" Target="TZ" Default="America/New_York" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">America/New_York</Config>
+  <Config Name="COOKIE_SECURE" Target="COOKIE_SECURE" Default="true|false" Mode="" Description="Require HTTPS for session cookies. Set to false if accessing over HTTP in production (not recommended)" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="Environment Mode" Target="NODE_ENV" Default="development|production" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">development</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">022</Config>
+  <Config Name="data" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/meshmonitor</Config>
+  <Config Name="Base URL" Target="BASE_URL" Default="" Mode="" Description="Runtime base URL path for subfolder deployment (e.g., /meshmonitor)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <TailscaleStateDir/>
+</Container>
