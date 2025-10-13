@@ -12,8 +12,8 @@
   <Overview> Web tool for monitoring a Meshtastic Node Deployment over TCP/HTTP </Overview>
   <Category>Tools: Network:Management</Category>
   <WebUI>http://[IP]:[PORT:3001]/</WebUI>
-  <TemplateURL/>
-  <Icon/>
+  <TemplateURL>https://raw.githubusercontent.com/wupasscat/unraid-templates/main/meshmonitor/meshmonitor.xml<TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/Yeraze/meshmonitor/refs/heads/main/public/logo.png<Icon/>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
